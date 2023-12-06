@@ -1,6 +1,6 @@
 /* 
-	Written by:÷nder Polat G¸m¸˛
-	date : 05.12.2023
+	Written by:√ñnder Polat G√ºm√ºs
+	date : 07.12.2023
 */
 
 #include <stdio.h>
@@ -32,29 +32,22 @@ int IZC,VZC,XZC,LZC,CZC,DZC,MZC;
 
 int a,i,j,helper,add,locater,removes;
 float sum;
-/*	HATALI YAZIﬁLAR ÷RNEK
+/*	HATALI YAZISLAR √ñRNEK
 https://www.dictionary.com/e/roman-numerals/
-For instance, a numeral can only be placed in front of the two numerals that are closest to it in the Roman numeral system.
-That is, I can only be placed before V ( e.g. IV, or 4) and X (e.g. IX, or 9). It canít be placed before L, C, D, or M.
-For example, in Roman numerals, 49 would be XLIX (50 ñ 10 = 40 and 10 ñ 1 = 9), not IL.
 
 	XIIIIIV
 	IIIII
 	XIVIV
 	
 	0x000001 = 4 TANE AYNI KARAKTERDEN BULUNUYOR
-	0x000002 = I ,V ,X ,L ,C ,D ,M DIﬁINDA B›R KARAKTER G›R›LM›ﬁ
-	0x000003 = Yanl˝˛ karakter dizilimi ( 3 == III , 3 != IIV)
+	0x000002 = I ,V ,X ,L ,C ,D ,M DI√ûINDA B√ùR KARAKTER G√ùR√ùLM√ù√û
+	0x000003 = Yanl√Ω√æ karakter dizilimi ( 3 == III , 3 != IIV)
 	0x000004 = For instance, a numeral can only be placed in front of the two numerals that are closest to it in the Roman numeral system.
-			   That is, I can only be placed before V ( e.g. IV, or 4) and X (e.g. IX, or 9). It canít be placed before L, C, D, or M.
-			   For example, in Roman numerals, 49 would be XLIX (50 ñ 10 = 40 and 10 ñ 1 = 9), not IL.
+			   That is, I can only be placed before V ( e.g. IV, or 4) and X (e.g. IX, or 9). It can‚Äôt be placed before L, C, D, or M.
+			   For example, in Roman numerals, 49 would be XLIX (50 ‚Äì 10 = 40 and 10 ‚Äì 1 = 9), not IL.
 	0x000005 =
 */
-int main(){	
-	while(1){
-		takeNumber();
-		reset();
-	}
+int main(){	//******************************************************************************************************************************
 	locater = -1;
 	while(locater != 0){
 		system("cls");
@@ -80,7 +73,7 @@ int main(){
 		sleep(2);
 	}
 
-}//         MAIN          *************************************************************************************
+}// ***********************************************************************        MAIN          *************************************************************************************
 void takeNumber(){
 		/*	for(i = 0;i < 30;i++){
 			if(RomeArray[i] != NULL){
